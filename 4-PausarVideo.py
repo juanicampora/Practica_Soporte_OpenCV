@@ -6,15 +6,15 @@ pausado=True
 while(True):
     ret, frame=cap.read()
     
-    if (cv2.waitKey(1)== 32): #27 es la tecla ESPACIO
+    tecla=cv2.waitKey(1)
+
+    if tecla== 32: #27 es la tecla ESPACIO
       pausado=not(pausado)
-     
+    elif tecla== 27:
+      break    
+    
     if pausado:
       cv2.imshow('Camara Notebook',frame)
-      
-    if cv2.waitKey(1)== 27: #27 es la tecla ESCAPE
-      break 
-
 
 cap.release()
 cv2.destroyAllWindows()
