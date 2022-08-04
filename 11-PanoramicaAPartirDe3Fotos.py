@@ -1,5 +1,5 @@
 import cv2
-image_paths=['pano1.jpg','pano2.jpg','pano3.jpg']
+image_paths=['OpenCV\pano1.jpg','OpenCV\pano2.jpg','OpenCV\pano3.jpg']
 # initialized a list of images
 imgs = []
  
